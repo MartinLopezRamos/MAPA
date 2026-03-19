@@ -1,0 +1,21 @@
+﻿<Window x:Class="ULTRA_MEGA_MOC_EFEKTIVNÍ_MAPA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ULTRA_MEGA_MOC_EFEKTIVNÍ_MAPA"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image Name="MapImage"
+           Source="/img/czechia.png"
+           Stretch="Uniform"
+           SizeChanged="MapImage_SizeChanged"
+           MouseDown="MapImage_MouseDown"/>
+        <Button Height="20" Width="100" Margin="247,166,453,248">Praha</Button>
+        <Button Height="20" Width="100" Margin="481,294,219,120">Brno</Button>
+        <Button Height="20" Width="100" Margin="43,156,657,258">Plzen</Button>
+        <Button Height="20" Width="100" RenderTransformOrigin="3.035,-0.014" Margin="582,184,118,230">Ostrava</Button>
+        <Canvas Name="OverlayCanvas"/>
+    </Grid>
+</Window>
