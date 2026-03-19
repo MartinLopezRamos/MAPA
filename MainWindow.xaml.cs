@@ -10,7 +10,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ULTRA_MEGA_MOC_EFEKTIVNÍ_MAPA
+namespace MAPA_PROG
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -19,7 +19,9 @@ namespace ULTRA_MEGA_MOC_EFEKTIVNÍ_MAPA
     {
         List<MapPoint> points = new List<MapPoint>()
         {
-
+            new MapPoint { Name = "Praha", XPercent = 0.3, YPercent = 0.4 },
+            new MapPoint { Name = "Brno", XPercent = 0.5, YPercent = 0.6 },
+            new MapPoint { Name = "Ostrava", XPercent = 0.7, YPercent = 0.3 },
         };
 
         public MainWindow()
@@ -78,6 +80,5 @@ namespace ULTRA_MEGA_MOC_EFEKTIVNÍ_MAPA
 
             MessageBox.Show($"{xPercent:F4} , {yPercent:F4}");
         }
-
     }
 }
